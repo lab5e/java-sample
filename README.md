@@ -1,8 +1,18 @@
-# Retrieve list of collectinos
+# Java example
 
-This samples shows how to retrieve a list of collections
+This samples shows how to retrieve a list of collections. The source is generated on the fly with the [openapi-generator-maven-plugin](https://mvnrepository.com/artifact/org.openapitools/openapi-generator-maven-plugin)
+available from Maven Central.
 
-Build with `mvn compile assembly:single`  then run with `java -jar target/collection-sample-1.0.0-jar-with-dependencies.jar [token]`
+Build with 
+```shell
+mvn install
+``` 
 
-You can build the main user library first to get a copy of the span api library in your local mvn repository.
+Create a new API token in the [Span dashboard](https://span.lab5e.com/) and run 
+the sample with 
+
+```shell
+java -jar target/target/collection-sample-1.0.0.jar [API token]
+```
+
 
